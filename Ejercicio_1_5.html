@@ -6,10 +6,22 @@
     </head>
     <body style="background: rgb(108, 127, 238);">
             
-        <h1>Ejercicio 1</h1>
-            
+        <h1>Validaciones Clase 5</h1>
             <script type="text/javascript">
-                
+                let pesosPorDia = parseFloat(prompt("¿Cuanto Ganas al Dia?"));
+                let pesosTotalesAAhorrar = parseFloat(prompt("¿Cuanto deseas ahorrar?"));
+                let cantidadDias = parseInt(prompt("¿Cuantos dias tienes para ahorrar?"));
+
+                let ahorroFinal = cantidadDias * pesosPorDia;
+
+                let alcanzasLosAhorros = ahorroFinal >= pesosTotalesAAhorrar;
+
+                    if(alcanzasLosAhorros){
+                        alert("Lo haz logrado!!");
+                    }else{
+                        alert("sigue trabajando");
+                    }
+
             </script>
     </body>
 </html>
