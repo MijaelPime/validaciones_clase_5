@@ -9,14 +9,16 @@
         <h1>Acceso al refrigerador Clase 5 </h1>
             <script type="text/javascript">
                 let nombre = prompt("¿Cual es tu Nombre?");
-                let password = prompt("¿Cual es tu Contraseña?");
-
-                if(nombre ==="mijael" && password === "mijael"){
-                    alert("Acceso al refrigerador");
-                }else{
+                if(nombre === "mijael"){
+                    let password = prompt("¿Cual es tu Contraseña?");
+                    if(password === "mijael"){
+                        alert("Acceso al refrigerador");    
+                    }else {
+                        alert("Cuidado Ladron de Comida!!");    
+                    }
+                }else {
                     alert("Cuidado Ladron de Comida!!");
                 }
-
             </script>
     </body>
 </html>
